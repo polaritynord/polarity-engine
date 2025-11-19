@@ -1,0 +1,139 @@
+{
+    "name": "Main Menu",
+    "backgroundColor": [0, 0, 0],
+    "tree": [
+        [
+            "camera", []
+        ],
+
+        [
+            "npcs", []
+        ],
+
+        [
+            "items", []
+        ],
+
+        [
+            "walls", []
+        ],
+
+        [
+            "props", []
+        ],
+
+        [
+            "tiles", []
+        ],
+
+        [
+            "bullets", []
+        ],
+
+        [
+            "mapCreator",
+            ["desolation/components/map_creator"]
+        ],
+
+        [
+            "gameShaders",
+            ["desolation/components/game_shaders"]
+        ],
+
+        [
+            "mainMenu",
+            ["UIComponent", "desolation/components/ui/main_menu"]
+        ],
+        
+        [
+            "devConsole",
+            ["UIComponent", "desolation/components/ui/dev_console"]
+        ],
+
+        [
+            "settings",
+            ["UIComponent", "desolation/components/ui/settings_menu"],
+            [
+                [
+                    "videoMenu",
+                    ["UIComponent", "desolation/components/ui/alt_menus/video_menu"]
+                ],
+
+                [
+                    "audioMenu",
+                    ["UIComponent", "desolation/components/ui/alt_menus/audio_menu"]
+                ],
+
+                [
+                    "keysMenu",
+                    ["UIComponent", "desolation/components/ui/alt_menus/keys_menu"]
+                ],
+
+                [
+                    "gameplayMenu",
+                    ["UIComponent", "desolation/components/ui/alt_menus/gameplay_menu"]
+                ]
+            ]
+        ],
+
+        [
+            "newGameMenu",
+            ["UIComponent", "desolation/components/ui/new_game_menu"]
+        ],
+
+        [
+            "loadGameMenu",
+            ["UIComponent", "desolation/components/ui/load_game_menu"]
+        ],
+
+        [
+            "extras",
+            ["UIComponent", "desolation/components/ui/extras_menu"],
+            [
+                [
+                    "infiniteMenu",
+                    ["UIComponent", "desolation/components/ui/alt_menus/infinite_menu"]
+                ]
+            ]
+        ],
+
+        [
+            "achievements",
+            ["UIComponent", "desolation/components/ui/achievements_menu"]
+        ],
+
+        [
+            "changelog",
+            ["UIComponent", "desolation/components/ui/changelog_menu"]
+        ],
+
+        [
+            "about",
+            ["UIComponent", "desolation/components/ui/about_menu"]
+        ],
+
+        [
+            "cursor",
+            ["UIComponent", "desolation/components/game_cursor_script"]
+        ]
+    ],
+
+    "assets": {
+        "images": [
+            ["logo", "desolation/assets/images/logo.png"],
+            ["nord_transparent", "engine/assets/icon_transparent.png"],
+            ["controller_selection", "desolation/assets/images/hud/hitmarker.png"],
+
+            ["difficulty_1", "desolation/assets/images/difficulty_icons/difficulty_1.png"],
+            ["difficulty_2", "desolation/assets/images/difficulty_icons/difficulty_2.png"],
+            ["difficulty_3", "desolation/assets/images/difficulty_icons/difficulty_3.png"],
+            ["difficulty_4", "desolation/assets/images/difficulty_icons/difficulty_4.png"],
+            ["difficulty_5", "desolation/assets/images/difficulty_icons/difficulty_5.png"],
+            ["map_openarea", "desolation/assets/images/infinite_maps/openarea.png"]
+        ],
+
+        "sounds": [
+            ["loop_menu", "desolation/assets/sounds/ost/loop_menu.wav", "stream"]
+        ]
+    }
+}

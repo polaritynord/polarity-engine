@@ -1,0 +1,313 @@
+{
+    "story": {
+        "beginningSpeech": [
+            "...",
+            "HELLO, AIDEN WILLIAMS.",
+            "PLEASE STAY CALM. YOU ARE STILL ASLEEP.",
+            "IN HIBERNATION.",
+            "WE WILL WAKE YOU UP SHORTLY. UNTIL THEN...",
+            "PLEASE... LISTEN CAREFULLY.",
+            "...",
+            "WHEN YOU OPEN YOUR EYES,",
+            "AND START TO SEARCH YOUR SURROUNDINGS...",
+            "YOU WILL SEE THAT, YOUR SITUATION...",
+            "IS RATHER...",
+            "DIRE.",
+            "UNFORTUNATELY, WE CAN DO NOTHING MUCH IN THAT REGARD.",
+            "BUT, KNOW THAT...",
+            "WE WILL BE WITH YOU.",
+            "YOU WILL NOT BE ALONE ON YOUR JOURNEY TO FREEDOM.",
+            "...",
+            "WE WISH YOU GOOD LUCK, AIDEN.",
+            "UNTIL WE MEET AGAIN,",
+            "KEEP THIS IN MIND AT ALL TIMES:",
+            "WE WOKE YOU UP FOR A REASON"
+        ],
+
+        "begSpeechEmphasises": [
+            [
+                [1, 0.4], [2, 0.4], [3, 0.4]
+            ],
+            [
+                [6, 0.4], [12, 0.3]
+            ],
+            [
+                [17, 0.6]
+            ],
+            [],
+            [
+                [28, 0.6]
+            ],
+            [
+                [9, 0.6]
+            ],
+            [
+                [1, 0.4], [2, 0.4], [3, 0.4]
+            ],
+            [],
+            [],
+            [
+               [18, 0.6] 
+            ],
+            [],
+            [],
+            [
+                [14, 0.6]
+            ],
+            [
+                [4, 0.6]
+            ],
+            [],
+            [],
+            [
+                [1, 0.4], [2, 0.4], [3, 0.4]
+            ],
+            [
+                [22, 0.4]
+            ],
+            [],
+            [
+                [17, 0.6]
+            ],
+            [
+                [2, 0.3], [7, 0.3], [11, 0.3],
+                [14, 0.3], [18, 0.3], [20, 0.3],
+                [27, 0.3]
+            ]
+        ],
+
+        "wakeupText": [
+            "BİRLEŞMİŞ DÜNYA MİLLETLERİ (BDM)",
+            "\nKIŞ UYKUSU HİZMETLERİ - Değerli Madenler Bakanlığı",
+            "\n\nUyandırma Protokolü başlatılıyor...",
+            "\n\nPersonel: Aiden Williams (NO: A12L.1310, Öncelik SVY 3)",
+            "\nYaş: 26",
+            "\nCinsiyet: Erkek",
+            "\nBoy: 182cm",
+            "\nKilo: 76kg",
+            "\n\nPersonelin yaşam göstergeleri ortalama.",
+            "\nNöron aktiviteleri makul.",
+            "\n\nPersonel Kapsül A04'den serbest bırakılmaya hazır.",
+            "\n\nKapsül kilidi açılıyor..."
+        ],
+
+        "wakeupTextTimes": [
+            1.7,
+            2.2,
+            3.4,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            8.5,
+            9.5,
+            11,
+            13
+        ]
+    },
+    "mainMenu": {
+        "campaign": "Hikaye Modu",
+        "newGame": "YENİ OYUN",
+        "loadGame": "KAYITLI OYUNLAR",
+        "extra": "EK OYUN MODLARI",
+        "achievements": "BAŞARIMLAR",
+        "settings": "AYARLAR",
+        "changelog": "GÜNCELLEMELER",
+        "quit": "OYUNDAN ÇIK",
+        "quitConfirmation": "Emin Misin?",
+        "returnButton": "Geri Dön"
+    },
+    "settings": {
+        "title": "AYARLAR",
+        "gameplay": "Oynanış",
+        "video": "Video",
+        "audio": "Ses",
+        "keys": "Kontroller",
+        "lang": "Dil: ",
+        "returnButton": "Kaydet & Geri Dön",
+        "restartWarning": "Degişiklerin gercekleşmesi icin yeniden başlatma gerekiyor.",
+        "bindingNames": {
+            "fullscreen": "Tam Ekran",
+            "sprint": "Koş",
+            "move_up": "Yukarı Hareket",
+            "move_down": "Aşağı Hareket",
+            "move_left": "Sola Hareket",
+            "move_right": "Sağa Hareket",
+            "w_slot_1": "1. Silah Slotu",
+            "w_slot_2": "2. Silah Slotu",
+            "w_slot_3": "3. Silah Slotu",
+            "w_quickswitch": "Önceki Slota Gec",
+            "drop_weapon": "Silahı Bırak",
+            "pause_game": "Oyunu Durdur",
+            "dev_console": "Yapımcı Konsolunu Aç",
+            "toggle_debug": "Hata Ayıklama Menüsünü Aç",
+            "interact": "Etkileşim",
+            "reload": "Silahı Doldur",
+            "toggle_hud": "HUD'u Aç/Kapa",
+            "screenshot": "Ekran Görüntüsü Çek",
+            "toggle_follow": "NPC'nin Takip Etmesini Sağla",
+            "flashlight": "Toggle Flashlight"
+        },
+        "videoTitle": "VİDEO AYARLARI",
+        "gameplayTitle": "OYNANIŞ AYARLARI",
+        "audioTitle": "SES AYARLARI",
+        "keysTitle": "KONTROL AYARLARI"
+    },
+    "achievementsMenu": {
+        "title": "BAŞARIMLAR",
+        "progress": "İLERLEME"
+    },
+    "achievementDisplayNames": {
+        "thanksForPlaying": "Oynadığın İçin Teşekkürler",
+        "selfDestruct": "Özyıkım",
+        "distant": "Sonsuz Ufuklar",
+        "aHairsBreadth": "Kıl Payı",
+        "devConsole": "Konsol",
+        "chainReaction": "Zincirleme Tepkime",
+        "1k_3": "Sert Metal",
+        "1k_4": "\"Ekstrem\" Derece Kolay",
+        "1k_5": "Sıfır Merhamet",
+        "play_all_radios": "Tum Radyoları Oynat",
+        "for_a_reason": "BİR SEBEP İÇİN"
+        
+},
+    "achievementDescriptions": {
+        "thanksForPlaying": "Oyunu ilk defa aç.",
+        "selfDestruct": "Kendini patlayıcı bir varille havaya uçur.",
+        "distant": "AŞIRI uzak koordinatlara git.",
+        "aHairsBreadth": "(Sonsuz) Bir dalgayı çok düşük can ile bitir.",
+        "devConsole": "Yapımcı konsolunu aç.",
+        "chainReaction": "Bir patlamayla baska patlayıcıları patlat.",
+        "1k_3": "(Sonsuz) Zor modda 1000 puana ulaş.",
+        "1k_4": "(Sonsuz) Ekstrem modda 1000 puana ulaş.",
+        "1k_5": "(Sonsuz) Ultra modda 1000 puana ulaş.",
+        "play_all_radios": "(Hikaye) Tüm ses kayıtlarını bul ve oynat.",
+        "for_a_reason": "Oyundaki tüm başarımları edin."
+    },
+    "pauseScreen": {
+        "continue": "DEVAM ET",
+        "mainMenu": "ANA MENÜ",
+        "saveProgress": "İLERLEME KAYDET"
+    },
+    "campaignMenu": {
+        "title": "HİKAYE MODU",
+        "wip": "Yapım Aşamasında..."
+    },
+    "newGameMenu": {
+        "title": "YENİ OYUN"
+    },
+    "loadGameMenu": {
+        "title": "KAYITLI OYUNLAR",
+        "noSavesFound": "Kayıtlı oyun dosyası bulunamadı.\nYeni bir oyun başlatmak için\n\"Yeni Oyun\"a tıklayın."
+    },
+    "extrasMenu": {
+        "title": "EK OYUN MODLARI",
+        "infiniteTitle": "SONSUZ MOD",
+        "playground": "Oyun Alanı",
+        "playgroundDesc": "Ne halt yersen ye.",
+        "infinite": "Sonsuz",
+        "infiniteDesc": "Olabildiğince hayatta kal.",
+        "infiniteDifficulty": "Zorluk: ",
+        "infiniteDifficulties": ["kolay", "orta", "zor", "ekstrem", "ultra"],
+        "highScore": "Rekor Puan",
+        "matchesPlayed": "Oynanan Maçlar",
+        "difficultyDescs": [
+            "Bundan daha kolay olabilir mi bilmiyorum.",
+            "Eh, azıcık daha zor.",
+            "Standart zorluk. Robotlar ve sen arasında adil bir savaş.",
+            "Sadece elitler icin tasarlandı.",
+            "Tanrının merhameti üzerine olsun"
+        ],
+        "crateAmount": "Kutu Miktarı: ",
+        "barrelAmount": "Varil Miktarı: ",
+        "expBarrelAmount": "Patlayıcı Varil Miktarı: ",
+        "regenerateProps": "Objeleri Yeniden Oluştur: ",
+        "startGame": "Oyunu Başlat"
+    },
+    "infiniteMode": {
+        "wave": "DALGA",
+        "eliminateAllRobots": "TÜM ROBOTLARI ETKİSİZ HALE GETİR",
+        "waveClear": "DALGA TAMAMLANDI",
+        "wavePrepare": "SONRAKİ DALGA İÇİN HAZIRLAN",
+        "highScore": "REKOR: ",
+        "notifs": {
+            "waveClear": "(+50) Dalga Tamamlandı",
+            "kill": "(+10) Robot Etkisizleştirildi",
+            "explosionBonus": "(+15) Patlama Bonusu",
+            "survivingPoint": "(+10) Hayatta Kalma"
+        },
+        "gameOverTitle": "OYUN BİTTİ",
+        "statsScore": "Puan: ",
+        "statsTime": "Hayatta Kalınan Zaman: ",
+        "statsAccuracy": "İsabetlililk: ",
+        "statsWaves": "Tamamlanan Dalgalar: ",
+        "statsKills": "Etkisizleştirilen Robotlar: ",
+        "statsBarrels": "Patlatılan Variller: ",
+        "statsCrates": "Kırılan Kutular: ",
+        "minute": " dk ",
+        "second": " sn"
+    },
+    "gameplayMenu": {
+        "skipIntro": "İntroyu Atla: ",
+        "cameraSway": "Kamera Sallantısı: ",
+        "screenShake": "Ekran Sarsintısı: ",
+        "alwaysSprint": "Her Zaman Koş: ",
+        "curvedHud": "Bombeli Arayüz: ",
+        "sensivity": "Hassasiyet: ",
+        "sprintType": "Koşma Tipi: ",
+        "hold": "BASILI TUT",
+        "toggle": "AÇ/KAPA",
+        "autoPickupLoot": "Otomatik İtem Toplama: ",
+        "controllerVibration": "Kumanda Titreşimi: ",
+        "controllerAimAssist": "Kumanda Nişan Yardımı: "
+    },
+    "videoMenu": {
+        "vsync": "V-Senkronizasyonu: ",
+        "vignette": "Ekran Karartısı: ",
+        "brightness": "Parlaklık: ",
+        "weaponFlameParticles": "Silah Ateş Parçacıkları: ",
+        "bulletShellParticles": "Mermi Kovanı Parçacıkları: ",
+        "destructionParticles": "Yıkım Parçacıkları: ",
+        "explosionParticles": "Patlama Parçacıkları: ",
+        "shinyMenu": "Parlayan Menü: ",
+        "resolution": "Çözünürlük: ",
+        "fullscreen": "Tam Ekran: "
+    },
+    "keysMenu": {
+        "pressAKey": "Bir tuşa bas... (iptal için tıkla)",
+        "resetToDefault": "Kontrolleri Varsayılana Sıfırla",
+        "name": "- İSİM -",
+        "key": "- TUŞ -",
+        "showControllerIcon": "Kumanda İkonunu Göster: ",
+        "tutorial": "Click on a name, and press a key to reassign."
+    },
+    "audioMenu": {
+        "masterVolume": "Ana Ses: ",
+        "sfxVolume": "Ses Efektleri: ",
+        "musicVolume": "Müzik Sesi: ",
+        "worldVolume": "Dünya Sesi: "
+    },
+    "game": {
+        "achievementObtained": "Başarım Edinildi!"
+    },
+    "intro": {
+        "betaText": "Bu oyun erken geliştirme aşamasındadır. Her şey değişime açıktır."
+    },
+    "weapons": {
+        "pistol": "Tabanca",
+        "revolver": "Altıpatlar",
+        "assaultrifle": "Taramalı T.",
+        "shotgun": "Pompalı T.",
+        "stolgard-pal": "Stolgard-PAL"
+    },
+    "aboutMenu": {
+        "title": "HAKKINDA"
+    },
+    "changelogMenu": {
+        "title": "GÜNCELLEMELER"
+    },
+    "bruhuhuh": "O KADAR UZAKTA NE YAPIYORSUN LAN?!",
+    "controllerConnected": "Kumanda Bağlandı",
+    "controllerDisconnected": "Kumanda Bağlantısı Koptu"
+}

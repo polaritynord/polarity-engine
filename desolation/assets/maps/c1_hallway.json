@@ -1,0 +1,305 @@
+{
+    "name": "Chapter 1 - Dormitories II",
+    "illumination": [0, 0, 0],
+    "saveable": true,
+    "playerData": {
+        "position": [0, 0],
+        "cameraPosition": [0, 0],
+        "health": 100,
+        "armor": 0,
+        "allowZoom": true
+    },
+
+    "walls": [
+        ["invisible", [-3, -5], [6, 1]],
+        ["test_gray", [-4, -13], [1, 21]],
+        ["test_gray", [3, -13], [1, 21]],
+        
+        ["test_gray", [-11, 7], [7, 1]],
+        ["test_gray", [-11, 8], [1, 6]],
+        ["test_gray", [-11, 14], [7, 1]],
+
+        ["test_gray", [-4, 14], [1, 9]],
+        ["test_gray", [3, 14], [1, 9]],
+
+        ["test_gray", [4, 14], [18, 1]],
+        ["test_gray", [4, 7], [18, 1]],
+
+        ["test_gray", [21, 5], [1, 2]],
+        ["test_gray", [22, 5], [2, 1]],
+        
+        ["test_gray", [23, -16], [1, 21]],
+        ["test_gray", [30, -16], [1, 21]],
+
+        ["test_gray", [30, 5], [3, 1]],
+        ["test_gray", [32, 6], [1, 1]],
+
+        ["test_gray", [32, 14], [18, 1]],
+        ["test_gray", [32, 7], [18, 1]],
+
+        ["test_gray", [50, 14], [1, 9]],
+        ["test_gray", [57, 14], [1, 9]],
+
+        ["test_gray", [50, -1], [1, 9]],
+        ["test_gray", [57, -1], [1, 9]],
+
+        ["test_gray", [58, 7], [7, 1]],
+        ["test_gray", [58, 14], [7, 1]],
+        ["test_gray", [64, 8], [1, 6]],
+
+        ["test_gray", [32, 15], [1, 2]],
+        ["test_gray", [30, 16], [2, 1]],
+
+        ["test_gray", [21, 15], [1, 2]],
+        ["test_gray", [22, 16], [2, 1]],
+
+        ["test_gray", [23, 17], [1, 9]],
+        ["test_gray", [30, 17], [1, 9]],
+        ["test_gray", [23, 28], [1, 8]],
+        ["test_gray", [30, 28], [1, 8]],
+        ["test_gray", [24, 35], [6, 1]],
+
+        ["test_gray", [18, 29], [5, 1]],
+        ["test_gray", [18, 24], [1, 5]],
+        ["test_gray", [19, 24], [4, 1]],
+
+        ["test_gray", [31, 29], [5, 1]],
+        ["test_gray", [35, 24], [1, 5]],
+        ["test_gray", [31, 24], [4, 1]]
+    ],
+
+    "tiles": [
+        ["prototype_black", -1, -1],
+        ["prototype_black", 0, -1],
+        ["prototype_black", 1, -1],
+        ["prototype_black", 2, -1],
+        ["prototype_black", 3, -1],
+        ["prototype_black", 4, -1],
+        
+        ["prototype_black", -1, 0],
+        ["prototype_black", 0, 0],
+        ["prototype_black", 1, 0],
+        ["prototype_black", 2, 0],
+        ["prototype_black", 3, 0],
+        ["prototype_black", 4, 0],
+
+        ["prototype_black", -1, 1],
+        ["prototype_black", 0, 1],
+        ["prototype_black", 1, 1],
+        ["prototype_black", 2, 1],
+        ["prototype_black", 3, 1],
+        ["prototype_black", 4, 1],
+
+        ["prototype_black", -1, 2],
+        ["prototype_black", 0, 2],
+        ["prototype_black", 1, 2],
+        ["prototype_black", 2, 2],
+        ["prototype_black", 3, 2],
+        ["prototype_black", 4, 2]
+    ],
+
+    "props": [
+        [
+            "image", [1725, 700], 0,
+            [
+                ["source", "uwn_logo"],
+                ["scale", [10, 10]],
+                ["color", [1, 1, 1, 0.2]]
+            ]
+        ],
+
+        [
+            "placeholder_button", [2190, 1722], 0,
+            [
+                ["pressEvent", "c1HallwayOpenDoor"],
+                ["onePressOnly", true]
+            ]
+        ],
+        [
+            "placeholder_button", [1266, 1722], 0, 
+            [
+                ["pressEvent", "c1HallwayOpenLights"],
+                ["onePressOnly", true]
+            ]
+        ],
+
+        [
+            "slide_door", [1500, 1730], 90,
+            [
+                ["locked", false]
+            ]
+        ],
+        [
+            "slide_door", [1955, 1730], 90,
+            [
+                ["locked", false]
+            ]
+        ],
+
+        [
+            "slide_door", [0, 1000], 0,
+            [
+                ["big", true],
+                ["locked", true]
+            ]
+        ],
+        [
+            "slide_door", [-300, 420], 0,
+            [
+                ["big", true],
+                ["locked", true]
+            ]
+        ],
+        [
+            "slide_door", [1735, 140], 0,
+            [
+                ["big", true],
+                ["locked", true],
+                ["isHallwayDoor", true]
+            ]
+        ],
+        [
+            "slide_door", [3450, 1000], 0,
+            [
+                ["big", true],
+                ["locked", true]
+            ]
+        ],
+        [
+            "slide_door", [3450, 420], 0,
+            [
+                ["big", true],
+                ["locked", true]
+            ]
+        ],
+
+        [
+            "text", [-120, 500], 0,
+            [
+                ["text", "A DORMITORIES"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [-120, 860], 0,
+            [
+                ["text", "B DORMITORIES"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [3346, 500], 0,
+            [
+                ["text", "C DORMITORIES"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [3346, 860], 0,
+            [
+                ["text", "D DORMITORIES"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [1620, 270], 0,
+            [
+                ["text", "LABORATORIES"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [1575, 1100], 0,
+            [
+                ["text", "MAINATANCE ROOMS"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [1600, 1675], 90,
+            [
+                ["text", "LIGHTS"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [1900, 1675], 90,
+            [
+                ["text", "DOORS"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+
+        [
+            "trigger_prop", [250, 510], 0,
+            [
+                ["event", "sprintHint"],
+                ["size", [50, 400]],
+                ["destroyInTrigger", true]
+            ]
+        ],
+        [
+            "trigger_prop", [1280, 510], 0,
+            [
+                ["event", "zoomHint"],
+                ["size", [50, 400]],
+                ["destroyInTrigger", true]
+            ]
+        ],
+        [
+            "trigger_prop", [1545, -900], 0,
+            [
+                ["event", "loadc1Labs"],
+                ["size", [380, 40]],
+                ["destroyInTrigger", true]
+            ]
+        ]
+    ],
+
+    "items": [
+        [
+            "flashlight", [0, 450], 0, true
+        ],
+
+        [
+            "weapon", [2101, 1636], 32, "Pistol", true
+        ]
+    ],
+
+    "lights": [
+        [0, -100, 600, 1, 0, 0, 1],
+        [0, 290, 600, 1, 0, 0, 1]
+    ],
+
+    "assets": {
+        "images": [
+            ["uwn_logo", "desolation/assets/images/uwn_logo.png"],
+
+            ["tile_prototype_black", "desolation/assets/images/tiles/prototype_black.png"],
+            ["wall_test_gray", "desolation/assets/images/walls/test_gray.png"],
+            ["prop_slide_door", "desolation/assets/images/props/slide_door.png"],
+            ["prop_placeholder_button", "desolation/assets/images/props/placeholder_button.png"],
+            ["weapon_pistol", "desolation/assets/images/weapons/pistol.png"],
+            ["item_flashlight", "desolation/assets/images/items/flashlight.png"]
+        ],
+        "sounds": [
+            ["ambience", "desolation/assets/sounds/ost/dormitory_ambience.wav", "stream"],
+
+            ["step_concrete1", "desolation/assets/sounds/footstep/concrete1.wav", "static"],
+            ["step_concrete2", "desolation/assets/sounds/footstep/concrete2.wav", "static"],
+            ["step_concrete3", "desolation/assets/sounds/footstep/concrete3.wav", "static"],
+            ["step_concrete4", "desolation/assets/sounds/footstep/concrete4.wav", "static"],
+
+            ["slide_door_open", "desolation/assets/sounds/slide_door_open.wav", "static"],
+            ["hallway_door_open", "desolation/assets/sounds/hallway_door_open.wav", "static"]
+        ]
+    }
+}

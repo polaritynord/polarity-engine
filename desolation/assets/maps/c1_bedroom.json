@@ -1,0 +1,257 @@
+{
+    "name": "Chapter 1 - Dormitories I",
+    "illumination": [0, 0, 0],
+    "saveable": true,
+    "playerData": {
+        "position": [-250, 70],
+        "cameraPosition": [-250, 70],
+        "health": 70,
+        "armor": 0,
+        "armorAcquired": false,
+        "allowZoom": true
+    },
+    
+    "walls": [
+        ["test_gray", [-1, -2], [1, 5]],
+        ["test_gray", [-7, 2], [6, 1]],
+        ["test_gray", [-8, -2], [1, 5]],
+        ["test_gray", [-3, -3], [8, 1]],
+        ["test_gray", [-11, -3], [6, 1]],
+        ["test_gray", [-11, -8], [1, 5]],
+        ["test_gray", [-11, -9], [6, 1]],
+        ["test_gray", [-3, -9], [8, 1]],
+        ["test_gray", [2, -2], [1, 5]],
+        ["test_gray", [7, -3], [10, 1]],
+
+        ["test_gray", [16, -2], [1, 24]],
+        ["test_gray", [23, -3], [1, 25]],
+
+        ["test_gray", [3, 2], [6, 1]],
+        ["test_gray", [9, -2], [1, 5]],
+        ["test_gray", [-8, -14], [1, 5]],
+        ["test_gray", [-7, -14], [6, 1]],
+        ["test_gray", [-1, -14], [1, 5]],
+        ["test_gray", [7, -9], [26, 1]],
+        ["test_gray", [24, -3], [9, 1]],
+        ["test_gray", [35, -3], [8, 1]],
+        ["test_gray", [45, -9], [5, 1]],
+        ["test_gray", [45, -3], [6, 1]],
+        ["test_gray", [50, -9], [1, 6]],
+        ["test_gray", [30, -14], [1, 5]],
+        ["test_gray", [31, -14], [7, 1]],
+        ["test_gray", [37, -13], [1, 4]],
+        ["test_gray", [35, -9], [8, 1]],
+        ["test_gray", [2, -14], [1, 5]],
+        ["test_gray", [3, -14], [7, 1]],
+        ["test_gray", [9, -13], [1, 4]],
+
+        ["test_gray", [40, -14], [1, 5]],
+        ["test_gray", [41, -14], [6, 1]],
+        ["test_gray", [47, -14], [1, 5]],
+
+        ["test_gray", [30, -2], [1, 5]],
+        ["test_gray", [31, 2], [6, 1]],
+        ["test_gray", [37, -2], [1, 5]],
+
+        ["test_gray", [40, -2], [1, 5]],
+        ["test_gray", [41, 2], [6, 1]],
+        ["test_gray", [47, -2], [1, 5]]
+    ],
+    "tiles": [
+        ["prototype_black", -1, -1],
+        ["prototype_black", 0, -1],
+        ["prototype_black", 1, -1],
+        ["prototype_black", 2, -1],
+        ["prototype_black", 3, -1],
+        ["prototype_black", -1, 0],
+        ["prototype_black", 0, 0],
+        ["prototype_black", 1, 0],
+        ["prototype_black", 2, 0],
+        ["prototype_black", 3, 0],
+        ["prototype_black", 1, 1]
+    ],
+    "props": [
+        ["c1_bedroom", [0, 0], 0, []],
+
+        ["crate", [-500, -400], 36, []],
+        ["crate_big", [-580, -400], 36, []],
+        ["crate_big", [-597, -305], -20, []],
+        ["barrel", [-530, -340], 0, []],
+        ["barrel", [-580, -230], 0, []],
+        ["radio", [2082, 62], 0, []],
+
+        [
+            "slide_door", [-257, -164], 0,
+            [
+                ["locked", false]
+            ]
+        ],
+        [
+            "slide_door", [-257, -540], 0,
+            [
+                ["locked", true]
+            ]
+        ],
+        [
+            "slide_door", [383, -540], 0,
+            [
+                ["locked", true]
+            ]
+        ],
+        [
+            "slide_door", [383, -164], 0,
+            [
+                ["locked", true]
+            ]
+        ],
+        [
+            "slide_door", [2178, -540], 0,
+            [
+                ["locked", true]
+            ]
+        ],
+        [
+            "slide_door", [2178, -164], 0,
+            [
+                ["locked", false]
+            ]
+        ],
+        [
+            "slide_door", [2818, -540], 0,
+            [
+                ["locked", true]
+            ]
+        ],
+        [
+            "slide_door", [2818, -164], 0,
+            [
+                ["locked", true]
+            ]
+        ],
+
+        [
+            "text", [-368, -243], 0,
+            [
+                ["text", "DORM ROOM A3"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [-368, -500], 0,
+            [
+                ["text", "DORM ROOM A2"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [272, -243], 0,
+            [
+                ["text", "DORM ROOM A4"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [272, -500], 0,
+            [
+                ["text", "DORM ROOM A1"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [2067, -243], 0,
+            [
+                ["text", "DORM ROOM A5"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [2067, -500], 0,
+            [
+                ["text", "DORM ROOM A8"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [2707, -243], 0,
+            [
+                ["text", "DORM ROOM A6"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+        [
+            "text", [2707, -500], 0,
+            [
+                ["text", "DORM ROOM A7"],
+                ["scale", [1.4, 1.4]],
+                ["color", [1, 1, 1, 0.4]]
+            ]
+        ],
+
+        [
+            "trigger_prop", [1100, 1136], 0,
+            [
+                ["event", "loadc1Hallway"],
+                ["destroyInTrigger", true],
+                ["size", [350, 80]]
+            ]
+        ],
+        [
+            "trigger_prop", [-290, -275], 0,
+            [
+                ["event", "chapter1Title"],
+                ["destroyInTrigger", true],
+                ["size", [80, 80]]
+            ]
+        ]
+    ],
+    "items": [],
+    "lights": [
+        [-250, 0, 1000, 1, 1, 1, 1],
+        [-490, -350, 600, 1, 0, 0, 1],
+        [-100, -350, 600, 1, 0, 0, 1],
+        [290, -350, 600, 1, 0, 0, 1],
+        [680, -350, 600, 1, 0, 0, 1],
+        [970, -350, 600, 1, 0, 0, 1],
+        [1360, -350, 600, 1, 0, 0, 1],
+        [1750, -350, 600, 1, 0, 0, 1],
+        [2140, -350, 600, 1, 0, 0, 1],
+        [2530, -350, 600, 1, 0, 0, 1],
+        [2920, -350, 600, 1, 0, 0, 1],
+
+        [1280, -6, 600, 1, 0, 0, 1],
+        [1280, 384, 600, 1, 0, 0, 1],
+        [1280, 774, 600, 1, 0, 0, 1]
+    ],
+
+    "assets": {
+        "images": [
+            ["prop_crate", "desolation/assets/images/props/crate.png"],
+            ["prop_barrel", "desolation/assets/images/props/barrel.png"],
+            ["prop_slide_door", "desolation/assets/images/props/slide_door.png"],
+            ["prop_radio", "desolation/assets/images/props/radio.png"],
+            
+            ["wall_test_gray", "desolation/assets/images/walls/test_gray.png"],
+            
+            ["tile_prototype_black", "desolation/assets/images/tiles/prototype_black.png"]
+        ],
+        "sounds": [
+            ["ambience", "desolation/assets/sounds/ost/dormitory_ambience.wav", "stream"],
+            ["wake_up", "desolation/assets/sounds/ost/wakeup.wav", "stream"],
+
+            ["step_concrete1", "desolation/assets/sounds/footstep/concrete1.wav", "static"],
+            ["step_concrete2", "desolation/assets/sounds/footstep/concrete2.wav", "static"],
+            ["step_concrete3", "desolation/assets/sounds/footstep/concrete3.wav", "static"],
+            ["step_concrete4", "desolation/assets/sounds/footstep/concrete4.wav", "static"],
+
+            ["slide_door_open", "desolation/assets/sounds/slide_door_open.wav", "static"],
+            ["console_process", "desolation/assets/sounds/console_process.wav", "static"]
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "illumination": [0, 0, 0],
+    "saveable": false,
+    "playerData": {
+        "position": [0, 0],
+        "cameraPosition": [0, 0],
+        "health": 100,
+        "armor": 0
+    },
+    "walls": [
+        ["test_gray", [-10, -5], [20, 2]],
+        ["test_gray", [14, -5], [5, 10]],
+        ["test_gray", [-8, 3], [18, 2]]
+    ],
+    "tiles": [
+        ["prototype_black", 0, 0],
+        ["prototype_black", 1, 0]
+    ],
+    "props": [
+        [
+            "crate_big", [238, -107], 220, []
+        ],
+        [
+            "crate", [160, -115], 0, []
+        ],
+        [
+            "crate", [355, -35], 75, []
+        ],
+
+        [
+            "radio", [974, 364], 0, []
+        ]
+    ],
+    "items": [
+
+    ],
+    "lights": [
+    ],
+    "assets": {
+        "images": [
+            ["prop_crate", "desolation/assets/images/props/crate.png"],
+            ["prop_radio", "desolation/assets/images/props/radio.png"],
+            ["wall_test_gray", "desolation/assets/images/walls/test_gray.png"],
+            ["tile_prototype_black", "desolation/assets/images/tiles/prototype_black.png"]
+        ],
+
+        "sounds": [
+            ["wake_up", "desolation/assets/sounds/ost/wakeup.wav", "stream"]
+        ]
+    }
+}

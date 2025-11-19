@@ -1,0 +1,10 @@
+{
+    "Lua.diagnostics.disable": [
+        "undefined-global",
+        "duplicate-set-field",
+        "undefined-field",
+        "need-check-nil",
+        "deprecated",
+        "param-type-mismatch"
+    ]
+}

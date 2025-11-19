@@ -1,0 +1,30 @@
+{
+    "name": "Intro",
+    "backgroundColor": [0, 0, 0],
+    "tree": [
+        ["camera", []],
+
+        [
+            "intro",
+            ["UIComponent", "desolation/components/ui/intro"]
+        ],
+
+        [
+            "cursor",
+            ["UIComponent", "desolation/components/game_cursor_script"]
+        ]
+    ],
+
+    "assets": {
+        "images": [
+            ["logo", "desolation/assets/images/logo.png"],
+            ["nord", "engine/assets/icon.png"],
+            ["love_logo", "engine/assets/love_logo.png"]
+        ],
+
+        "sounds": [
+            ["ost_intro", "desolation/assets/sounds/ost/intro.wav", "static"],
+			["console_process", "desolation/assets/sounds/console_process.wav", "static"]
+        ]
+    }
+}
