@@ -25,7 +25,6 @@ function scene.new()
     end
 
     function s:preDrawLights()
-        if GetGlobal("fullbright") > 0 then return end
         love.graphics.setCanvas({ self.lightCanvas, stencil = true})
             love.graphics.translate((-self.camera.position[1])*self.camera.zoom+480, (-self.camera.position[2])*self.camera.zoom+270)
             love.graphics.scale(self.camera.zoom, self.camera.zoom)

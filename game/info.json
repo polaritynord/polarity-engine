@@ -1,0 +1,8 @@
+{
+    "name": "game",
+    "author": "AUTHOR_NAME",
+    "version": "1.0",
+    "versionState": "release",
+    "startScene": "game/assets/scenes/empty_scene.json",
+    "icon": null
+}

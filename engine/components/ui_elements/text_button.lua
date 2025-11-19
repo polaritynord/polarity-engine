@@ -1,5 +1,5 @@
 local coreFuncs = require("coreFuncs")
-local buttonEvents = require("desolation.button_clickevents")
+local buttonEvents = require("game.button_clickevents")
 
 local textButton = {}
 

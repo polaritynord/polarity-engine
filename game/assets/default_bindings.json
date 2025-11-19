@@ -1,0 +1,11 @@
+{
+    "keyboard": [
+        ["fullscreen", "f11"],
+        ["screenshot", "f12"]
+    ],
+
+    "joystick": [
+        ["fullscreen", 0],
+        ["screenshot", 5]
+    ]
+}

@@ -1,12 +1,9 @@
 local json = require("engine.lib.json")
 local scene = require("engine.scene")
-local weaponManager = require("desolation.weapon_manager")
 
 local startupManager = {}
 
 function startupManager:load()
-    Globals:load()
-    weaponManager:load()
     --Fetch game info
     local engineInfoFile = love.filesystem.read("engine/info.json")
     local engineInfoData = json.decode(engineInfoFile)
@@ -22,7 +19,7 @@ function startupManager:load()
 
     --Load settings data
     local settingsExists = love.filesystem.getInfo("settings.json")
-    local defaultSettingsFile = love.filesystem.read("desolation/assets/default_settings.json")
+    local defaultSettingsFile = love.filesystem.read(GAME_DIRECTORY .. "/assets/default_settings.json")
     local defaultSettingsData = json.decode(defaultSettingsFile)
     if settingsExists and not table.contains(arg, "--default-settings") then
         --read settings file & save it as table
@@ -56,37 +53,11 @@ function startupManager:load()
     local h = Settings.resolution_options[Settings.resolution][2]
     love.window.setMode(w, h, {fullscreen=Settings.fullscreen})
 
-    --Load localization data
-    Loca = love.filesystem.read("desolation/assets/loca_en.json")
-    --Loca = love.filesystem.read("desolation/assets/loca_" .. Settings.language .. ".json")
-    Loca = json.decode(Loca)
-
-    --Load achievements data
-    local fileExists = love.filesystem.getInfo("achievements.json")
-    local achievementsList = love.filesystem.read("desolation/assets/achievements_list.json")
-    local achievementsListData = json.decode(achievementsList)
     --local defaultBindings = json.decode(defaultBindingsFile)
-    --Check if achievements file exists
-    if fileExists then
-        --Read binding file & save it as table
-        local achievementsData = love.filesystem.read("achievements.json")
-        --Decode json file
-        Achievements = json.decode(achievementsData)
-        --TODO: check if there is any achievements missing!!!
-    else
-        --Write new achievements file
-        love.filesystem.write("achievements.json", achievementsList)
-        Achievements = achievementsListData
-    end
 
     --Screenshots folder
     if love.filesystem.getInfo("screenshots") == nil then
         love.filesystem.createDirectory("screenshots")
-    end
-    
-    --Saves folder
-    if love.filesystem.getInfo("saves") == nil then
-        love.filesystem.createDirectory("saves")
     end
 end
 

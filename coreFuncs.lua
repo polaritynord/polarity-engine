@@ -79,36 +79,6 @@ function coreFuncs.aabbCollision(pos1, pos2, size1, size2)
             pos1[2]+size1[2] > pos2[2]
 end
 
-function coreFuncs.infiniteModeAmmoType(wave)
-    local n = math.random()
-    if wave <= 3 then
-        --In the first three waves, it is more likely for enemies & crates to
-        --drop light ammunition to encourage the player to use the pistol more.
-        if n <= 0.65 then
-            return "ammo_light"
-        elseif n > 0.65 and n <= 0.85 then
-            return "ammo_shotgun"
-        else
-            return "ammo_medium"
-        end
-    elseif wave <= 7 then
-        --In waves 4-7, it is an equal distribution for all types.
-        n = math.random(1, 3)
-        if n == 1 then return "ammo_light" end
-        if n == 2 then return "ammo_shotgun" end
-        if n == 3 then return "ammo_medium" end
-    else
-        --In waves higher than 7, 40% medium, %38 shotgun, %22 pistol.
-        if n <= 0.4 then
-            return "ammo_medium"
-        elseif n > 0.4 and n < 7.8 then
-            return "ammo_shotgun"
-        else
-            return "ammo_light"
-        end
-    end
-end
-
 -- Thanks to @pgimeno at https://love2d.org/forums/viewtopic.php?f=4&t=93768&p=250899#p250899
 function SetFont(fontname, size)
     local key = fontname .. "\0" .. size
@@ -153,17 +123,6 @@ function table.removeValue(tbl, val)
             break
         end
     end
-end
-
-function GiveAchievement(name)
-    if Achievements[name].obtained then return end
-    Achievements[name].obtained = true
-    love.filesystem.write("achievements.json", json.encode(Achievements))
-    --Add ach. to notif queue
-    if CurrentScene.achievementUI == nil then return end
-    CurrentScene.achievementUI.queue[#CurrentScene.achievementUI.queue+1] = name
-    --Play sound
-    SoundManager:restartSound(Assets.sounds["achievement_obtain"], Settings.vol_sfx)
 end
 
 return coreFuncs

@@ -1,0 +1,9 @@
+{
+    "name": "Empty Scene",
+    "backgroundColor": [0, 0, 0],
+    "tree": [
+        ["camera", []]
+    ],
+
+    "assets": {}
+}

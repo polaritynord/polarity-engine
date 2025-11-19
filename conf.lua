@@ -31,9 +31,9 @@ end
 
 function love.conf(t)
     t.window.width = 960 ; t.window.height = 540
-    t.window.title = "DESOLATION"
+    t.window.title = "Polarity Engine"
     if table.contains(arg, "--no-vsync") then t.window.vsync = 0 end
-    t.window.icon = "desolation/assets/images/icon.png"
+    t.window.icon = "engine/assets/icon.png"
     t.console = true
     ScreenWidth, ScreenHeight = t.window.width, t.window.height
 end

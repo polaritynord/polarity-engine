@@ -1,0 +1,11 @@
+{
+    "vol_master": 1,
+    "vol_music": 0.75,
+    "vol_world": 0.25,
+    "vol_sfx": 0.5,
+    "language": "en",
+    "vsync": true,
+    "fullscreen": false,
+    "resolution": 1,
+    "resolution_options": [[960, 540], [1024, 576], [1152, 648], [1280, 720], [1600, 900], [1920, 1080]]
+}

@@ -12,13 +12,6 @@ function love.joystickadded(joystick)
     inputManager.joystick = joystick
     inputManager.inputType = "joystick"
     print("joystick connected")
-    --"Connected" notification
-    local cursorObject = CurrentScene.cursor
-    if cursorObject ~= nil then
-        local controllerNotif = cursorObject.UIComponent.controllerNotif
-        controllerNotif.text = Loca.controllerConnected
-        controllerNotif.color[4] = 1
-    end
 end
 
 function love.joystickremoved(joystick)
@@ -26,13 +19,6 @@ function love.joystickremoved(joystick)
     inputManager.joystick = nil
     inputManager.inputType = "keyboard"
     print("joystick removed")
-    --"Disconnected" notification
-    local cursorObject = CurrentScene.cursor
-    if cursorObject ~= nil then
-        local controllerNotif = cursorObject.UIComponent.controllerNotif
-        controllerNotif.text = Loca.controllerDisconnected
-        controllerNotif.color[4] = 1
-    end
 end
 
 function love.joystickpressed(joystick, button)
@@ -41,18 +27,6 @@ function love.joystickpressed(joystick, button)
     if inputManager.inputType ~= "joystick" then
         inputManager.inputType = "joystick"
         print("joystick input mode active")
-    end
-    --Pause key
-    local console = CurrentScene.devConsole
-    if table.contains(InputManager:getKeys("pause_game"), button) and (console and not console.open) and CurrentScene.player.health > 0 then
-        GamePaused = not GamePaused
-        CurrentScene.settings.menu = nil
-        CurrentScene.settings.open = false
-    end
-    --Flashlight toggle for player
-    if table.contains(InputManager:getKeys("flashlight"), button) and CurrentScene.name == "Game" and not GamePaused and CurrentScene.player.health > 0 and CurrentScene.player.flashlightAcquired then
-        CurrentScene.player.flashlightOn = not CurrentScene.player.flashlightOn
-        SoundManager:restartSound(Assets.sounds["flashlight_on"], Settings.vol_world)
     end
 end
 
@@ -64,7 +38,7 @@ end
 
 function inputManager:loadBindingFile()
     local fileExists = love.filesystem.getInfo("bindings.json")
-    local defaultBindingsFile = love.filesystem.read("desolation/assets/default_bindings.json")
+    local defaultBindingsFile = love.filesystem.read(GAME_DIRECTORY .. "/assets/default_bindings.json")
     local defaultBindings = json.decode(defaultBindingsFile)
     --Check if binding file exists
     if fileExists and not table.contains(arg, "--default-bindings") then
