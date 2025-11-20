@@ -6,6 +6,7 @@
         "need-check-nil",
         "deprecated",
         "param-type-mismatch",
-        "lowercase-global"
+        "lowercase-global",
+        "inject-field"
     ]
 }

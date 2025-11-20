@@ -2,7 +2,11 @@
     "name": "Empty Scene",
     "backgroundColor": [0, 0, 0],
     "tree": [
-        ["camera", []]
+        ["camera", []],
+        [
+            "helloWorld",
+            ["UIComponent", "game/components/script"]
+        ]
     ],
 
     "assets": {}
